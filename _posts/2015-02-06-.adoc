@@ -1,4 +1,4 @@
-= HubPress: a web application to build static blog on GitHub Pages.
+= 艺推第一个博客
 :figure-caption!:
 :published_at: 2015-02-06
 :hp-tags: news
