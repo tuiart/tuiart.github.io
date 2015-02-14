@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title></title>
     <meta name="description" content="" />
-    <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="http://tuiart.github.io/themes/Saga/assets/css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
-    <link href="http://tuiart.github.io/themes/Saga/assets/css/animate.min.css?v=1.0.0" rel="stylesheet" type="text/css">
-    <link href="http://tuiart.github.io/themes/Saga/favicon.ico" rel="shortcut icon">
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://tuiart.github.io/themes/Roon/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
+    <link rel="stylesheet" type="text/css" href="http://tuiart.github.io/themes/Roon/assets/css/screen.css?v=1.0.0" />
+
     <link rel="canonical" href="http://tuiart.github.ioundefined" />
     <meta name="generator" content="Ghost ?" />
     <link rel="alternate" type="application/rss+xml" title="艺推" href="http://tuiart.github.io/rss" />
 </head>
-<body class="home-template">
-    <header id="header">
-    <div class="header-background">
-    <section class="blog-content animated fadeIn">
-        <a id="site-url" class="blog-title" href="http://tuiart.github.io">艺推</a>
-        <span class="blog-description">We only do a few things but what we do, we do well.  
-------Focus Art Recommended</span>
-        <nav class="links fadeIn animated">
-            <ul>
-                <!-- <li class="rss"><a title="RSS Feed" href="/rss/"><i class="fa fa-fw fa-rss-square"></i></a></li> -->
-                <li class="github"><a title="GitHub" href="http://tuiart.github.io"><i class="fa fa-fw fa-github-square"></i></a></li>
-        
-            </ul>
-        </nav>
-    </section>
+<body class="home-template  ">
+
+    
+<header role="banner">
+    <div class="wrap">
+        <h1><a href="http://tuiart.github.io">艺推</a></h1>
+        <hr>
     </div>
 </header>
-<main id="main" class="archive">
-    <section id="feed" class="feed">
-    </section>
-    <nav class="pagination" role="navigation">
-        <span class="page-number">Page 0 of 0</span>
-    </nav></main>
-    <footer class="animated fadeIn" id="footer">
-        <section class="colophon">
-          <section class="copyright">Copyright &copy; <span itemprop="copyrightHolder">艺推</span>. <span rel="license">All Rights Reserved</span>.</section>
-          <section class="poweredby">Published with <a class="icon-ghost" href="http://hubpress.io">HubPress</a></section>
-        </section>
-        <section class="bottom">
-          <section class="attribution">
-            <a href="http://github.com/Reedyn/Saga">Built with <i class="fa fa-heart"></i> and Free and Open-Source Software</a>.
-          </section>
-        </section>
-    </footer>
+
+
+<nav class="pagination" role="navigation">
+    <span class="page-number">Page 0 of 0</span>
+</nav>
+
+<footer role="contentinfo">
+    <div class="inner">
+        <div class="vcard">
+            <a href="http://tuiart.github.io/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                <span aria-hidden="true" data-icon=")"></span>
+                <strong>Feed</strong>
+            </a>
+
+            <a href="http://tuiart.github.io" class="photo circle">
+                <span style="background-image: url('image::http://github.com/tuiart/tuiart.github.io/images/logo.jpg[]');">
+                    <img src="image::http://github.com/tuiart/tuiart.github.io/images/logo.jpg[]" alt="艺推">
+                </span>
+            </a>
+
+            <div class="details">
+                <h4><a href="http://tuiart.github.io" class="url n">艺推</a></h4>
+                <a href="http://tuiart.github.io" class="js-remove-domain-schema">http://tuiart.github.io</a><br>
+                <span>Published with <a href="http://hubpress.io">HubPress</a></span>
+            </div>
+        </div>
+        <div id="user_bio">
+            <div class="inner">
+                We only do a few things but what we do, we do well.  
+------Focus Art Recommended
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        <a href="http://tuiart.github.io" id="blog_badge">
+            <span style="background-image: url('image::http://github.com/tuiart/tuiart.github.io/images/logo.jpg[]');">艺推</span>
+        </a>
+
+
+    <script>
+
+
+        function no_schema_links () {
+            var links = document.querySelectorAll('.js-remove-domain-schema');
+            if (links) {
+                for (i = 0; i < links.length; ++i) {
+                    var link = links[i],
+                        text = link.innerHTML,
+                        no_schema = text.replace(/.*?:\/\//g, "");
+                    link.innerHTML = no_schema;
+                }
+            }
+        }
+
+        window.onload = function () {
+            no_schema_links();
+
+        }
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
-    <script src="http://tuiart.github.io/themes/Saga/assets/js/scripts.js?v=1.0.0"></script>
-    
+
+
+
+
 </body>
 </html>
