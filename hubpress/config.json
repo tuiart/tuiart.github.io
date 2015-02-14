@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "tuiart",
-    "repositoryName": "tuiart.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"tuiart","repositoryName":"tuiart.github.io","branch":"master"},"site":{"title":"tuiart","description":"We only do a few things but what we do, we do well.  \n------Focus Art Recommended","logo":"image::http://github.com/tuiart/tuiart.github.io/images/logo.jpg[]","cover":"image::http://github.com/tuiart/tuiart.github.io/images/cover.jpg[]","postsPerPage":"partials","disqus":"tuiart","url":"http://tuiart.github.io"},"socialnetwork":{"email":"","github":"http://tuiart.github.io"},"theme":{"name":"Casper","url":"http://tuiart.github.io/themes/Casper"}}
